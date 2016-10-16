@@ -15,9 +15,10 @@ public class PP2P8 {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
+        // aqui estan las 3 variables declaradas que ocupare en todo el programa
         double c1, c2, hipotenusa;
         c1 = pedirCateto();
+        //ocupe el mismo metodo para los 2 catetos, registrando el valor en diferente variables
         c2 = pedirCateto();
         hipotenusa = CalcularHipotenusa(c1, c2);
         Mostrar(c1, c2, hipotenusa);
@@ -31,6 +32,7 @@ public class PP2P8 {
     }
     public static double CalcularHipotenusa(double c1, double c2){
         double hipotenusa, a;
+        //separe en 2 la formula pitagoras
         a = (Math.pow(c1,2))+(Math.pow(c2, 2));
         hipotenusa = Math.sqrt(a);
         return hipotenusa;
